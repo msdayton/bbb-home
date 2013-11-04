@@ -20,7 +20,7 @@ int main() {
 			fwrite("1",sizeof(char),1,LEDHandle);
 			fclose(LEDHandle);
 		}
-		sleep(2);
+		sleep(1);
 		if((LEDHandle = fopen(LEDBrightness, "r+"))!=NULL){
 			fwrite("0",sizeof(char),1,LEDHandle);
 			fclose(LEDHandle);
